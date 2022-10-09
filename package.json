@@ -1,5 +1,5 @@
 {
-  "name": "@irfanwani/rn-dialog",
+  "name": "@irfanwani/react-native-dialog",
   "version": "0.0.1",
   "description": "This is a typescript package for react native apps to display a dialog box",
   "main": "lib/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/irfanwani/rn-dialog.git"
+    "url": "git+https://github.com/irfanwani/react-native-dialog.git"
   },
   "keywords": [
     "react-native",
@@ -21,11 +21,11 @@
     "rn-dialog"
   ],
   "author": "Irfanwani <irfanwani347@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/irfanwani/rn-dialog/issues"
+    "url": "https://github.com/irfanwani/react-native-dialog/issues"
   },
-  "homepage": "https://github.com/irfanwani/rn-dialog#readme",
+  "homepage": "https://github.com/irfanwani/react-native-dialog#readme",
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-native": "^0.69",

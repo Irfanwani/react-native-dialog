@@ -1,25 +1,48 @@
-import { FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect } from "react";
 import {
   View,
   TouchableOpacity,
   Text,
   GestureResponderEvent,
-  StyleSheet,
-  Dimensions,
-  Button,
-} from 'react-native';
+} from "react-native";
 
-import * as Animatable from 'react-native-animatable';
+import * as Animatable from "react-native-animatable";
 
-import styles from './styles'
+import styles from "./styles";
+
+// ADD OTHER PROPS LIKE CONFIRM STYLES, CANCEL STYLES,OTHER STYLES AS PROPS TO SUPPORT DYNAMIC STYLING, CHANGE TITLE, SUBTTILE FROM STRING TO REACT COMPONENTS FOR MORE CUSTOMIZATION OPTIONS, DARK AND LIGHT MODE, LINEARGRADIENT(OPTIONAL), BACKDROP (CLOSE WHEN CLICKED OUTSIDE DIALOG).
 
 interface DialogProps {
   visible: boolean;
+  title: string;
+  subtitle: string;
   closeDialog: (event: GestureResponderEvent) => void;
   confirm: (event: GestureResponderEvent) => void;
+  confirmText: string;
+  titleStyle?: Object;
+  cancelStyle?: Object;
+  confirmStyle?: Object;
+  subtitleStyle?: Object;
+  cancelTextStyle?: Object;
+  cancelText: string;
+  confirmTextStyle?: Object;
 }
 
-const Dialog: FC<DialogProps> = ({ visible, closeDialog, confirm }) => {
+const Dialog: FC<DialogProps> = ({
+  visible,
+  title,
+  subtitle,
+  closeDialog,
+  confirm,
+  confirmText,
+  confirmTextStyle,
+  titleStyle,
+  cancelStyle,
+  confirmStyle,
+  subtitleStyle,
+  cancelTextStyle,
+  cancelText,
+}) => {
   const [visiblest, setvisible] = useState(visible);
 
   useEffect(() => {
@@ -34,20 +57,27 @@ const Dialog: FC<DialogProps> = ({ visible, closeDialog, confirm }) => {
 
   if (visiblest) {
     return (
-      <View style={styles.dialog}>
+      <View style={styles.dialog} onTouchEnd={closeDialog}>
         <Animatable.View
-          animation={visible ? 'zoomIn' : 'zoomOut'}
+          animation={visible ? "zoomIn" : "zoomOut"}
           style={styles.dialogbox}
-          duration={250}>
-          <Text style={styles.warning}>Are you Sure?</Text>
-          <Text>This action cannot be reverted.</Text>
+          duration={250}
+        >
+          <Text style={[styles.warning, titleStyle]}>{title}</Text>
+          <Text style={subtitleStyle}>{subtitle}</Text>
 
           <View style={styles.card}>
-            <TouchableOpacity onPress={closeDialog} style={styles.cancel}>
-              <Text>Cancel</Text>
+            <TouchableOpacity
+              onPress={closeDialog}
+              style={[styles.cancel, cancelStyle]}
+            >
+              <Text style={cancelTextStyle}>{cancelText}</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={confirm} style={styles.confirm}>
-              <Text>Delete</Text>
+            <TouchableOpacity
+              onPress={confirm}
+              style={[styles.confirm, confirmStyle]}
+            >
+              <Text style={confirmTextStyle}>{confirmText}</Text>
             </TouchableOpacity>
           </View>
         </Animatable.View>
@@ -57,6 +87,5 @@ const Dialog: FC<DialogProps> = ({ visible, closeDialog, confirm }) => {
 
   return <></>;
 };
-
 
 export default Dialog;
