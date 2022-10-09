@@ -11,7 +11,7 @@ Just click on ⭐️ button 😘
 
 <span>
 <video width="300" height="400" autoplay muted>
-  <source src="https://drive.google.com/file/d/15a5HiTetH0ovAVpr9gLBtbzxebPYFJSx/view?usp=sharing" type="video/mp4">
+  <source src="https://github.com/Irfanwani/react-native-dialog/blob/master/src/VID_20221009175555.mp4" type="video/mp4">
 </video>
 </span>
 
