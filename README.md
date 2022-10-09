@@ -61,7 +61,7 @@ export default () => {
 | ------------------- | ---------------------------------------- | --------------------------------- | ---------------------------------------------- |
 | `visible`           | `boolean`                                | True                              | Determines whether the dialog is shown or not  |
 | `title`             | `string`                                 | True                              | Title for the dialog                           |
-| `subtitle`          | `string`                                 | Extra description about the alert |
+| `subtitle`          | `string` | True                             | Extra description about the alert |
 | `closeDialog`       | `(event: GestureResponderEvent) => void` | True                              | Callback for the close button                  |
 | `confirm`           | `(event: GestureResponderEvent) => void` | True                              | Callback for the confirm button                |
 | `confirmText`       | `string`                                 | True                              | text to be shown on the confirm button         |
