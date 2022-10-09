@@ -6,6 +6,15 @@ React native dialog library to show dialog boxes
 
 Just click on ⭐️ button 😘
 
+<br >
+<br >
+
+<span>
+<video width="300" height="400" autoplay muted>
+  <source src="https://drive.google.com/file/d/15a5HiTetH0ovAVpr9gLBtbzxebPYFJSx/view?usp=sharing" type="video/mp4">
+</video>
+</span>
+
 ## Installation:
 
 ```
