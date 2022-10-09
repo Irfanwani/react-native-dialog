@@ -57,18 +57,18 @@ export default () => {
 
 ## Props
 
-| Prop                  | Type                                     | Required                              | Note                                           |
-| --------------------- | ---------------------------------------- | ------------------------------------- | ---------------------------------------------- |
-| `visible`             | `boolean`                                | True                                  | Determines whether the dialog is shown or not  |
-| `title`               | `string`                                 | True                                  | Title for the dialog                           |
-| `subtitle`            | `string`                                 | Extra description about the alert     |
-| `closeDialog`         | `(event: GestureResponderEvent) => void` | True                                  | Callback for the close button                  |
-| `confirm`             | `(event: GestureResponderEvent) => void` | True                                  | Callback for the confirm button                |
-| `confirmText`         | `string`                                 | True                                  | text to be shown on the confirm button         |
-| `cancelText` `string` | True                                     | text to be shown on the cancel button |
-| `titleStyle?`         | `Object`                                 | False                                 | Styles object for the title                    |
-| `cancelStyle?`        | `Object`                                 | False                                 | Styles object for the cancel button container  |
-| `confirmStyle?`       | `Object`                                 | False                                 | Styles object for the confirm button container |
-| `subtitleStyle?`      | `Object`                                 | False                                 | Styles object for the subtitle button          |
-| `cancelTextStyle?`    | `Object`                                 | False                                 | Styles object for the cancel button text       |
-| `confirmTextStyle?`   | `Object`                                 | False                                 | Styles object for the confirm button text      |
+| Prop                | Type                                     | Required                          | Note                                           |
+| ------------------- | ---------------------------------------- | --------------------------------- | ---------------------------------------------- |
+| `visible`           | `boolean`                                | True                              | Determines whether the dialog is shown or not  |
+| `title`             | `string`                                 | True                              | Title for the dialog                           |
+| `subtitle`          | `string`                                 | Extra description about the alert |
+| `closeDialog`       | `(event: GestureResponderEvent) => void` | True                              | Callback for the close button                  |
+| `confirm`           | `(event: GestureResponderEvent) => void` | True                              | Callback for the confirm button                |
+| `confirmText`       | `string`                                 | True                              | text to be shown on the confirm button         |
+| `cancelText`        | `string`                                 | True                              | text to be shown on the cancel button          |
+| `titleStyle?`       | `Object`                                 | False                             | Styles object for the title                    |
+| `cancelStyle?`      | `Object`                                 | False                             | Styles object for the cancel button container  |
+| `confirmStyle?`     | `Object`                                 | False                             | Styles object for the confirm button container |
+| `subtitleStyle?`    | `Object`                                 | False                             | Styles object for the subtitle button          |
+| `cancelTextStyle?`  | `Object`                                 | False                             | Styles object for the cancel button text       |
+| `confirmTextStyle?` | `Object`                                 | False                             | Styles object for the confirm button text      |
