@@ -6,6 +6,8 @@ React native dialog library to show dialog boxes
 
 Just click on ⭐️ button 😘
 
+![modaldemo](https://user-images.githubusercontent.com/62456735/202854628-b90c0324-f549-4f5e-9c21-cf457e5f232a.gif)
+
 ## Installation:
 
 ```
